@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="container">
 
         <div class="mt-5 mb-5">
-            <h1>My todo list</h1>
+            <h1>My ToDo List</h1>
         </div>
 
         <div class="col-lg-12">
@@ -15,13 +16,13 @@
                     <div class="col-lg-10">
 
                         <div class="form-group">
-                            <input class="form-control m-3" name="title" type="text" placeholder="Enter your task to do">
+                            <input class="form-control m-3" name="title" type="text" placeholder="Enter your task to do" aria-describedby="inputGroup-sizing-lg" required>
                         </div>
 
                     </div>
 
                     <div class="col-lg-2">
-                        <button type="submit" class="m-3 btn btn-primary">Submit</button>
+                        <button type="submit" class="m-3 btn btn-primary">Add</button>
                     </div>
 
                 </div>
@@ -31,8 +32,8 @@
 
         <div class="col-lg-12">
             <div>
-                <table class="table table-striped">
-                    <thead>
+                <table class="table table-striped table-success">
+                    <thead class="table-dark">
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Title</th>

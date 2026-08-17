@@ -2,7 +2,7 @@
                 @csrf
                 <div class="row">
 
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
 
                         <div class="form-group">
                             <input class="form-control m-3" value="{{ $task->title }}" name="title" type="text" placeholder="Enter your task to do">

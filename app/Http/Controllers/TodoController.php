@@ -14,15 +14,18 @@ class TodoController extends Controller
     }
 
     public function index()
-    {
-        $response['tasks'] = $this->task->all();
-        return view('pages\todo\index')->with($response);
-    }
+{
+    $tasks = $this->task->all();
+    
+    return view('pages.index', compact('tasks'));
+}
 
     public function store(Request $request)
     {
         //to save every variable data  
         $this->task->create($request->all());
+
+      
 
         //back to task adding screen
         return redirect()->back();
@@ -48,7 +51,7 @@ class TodoController extends Controller
     {
         $response['task'] = ToDo::find($request->task_id);
 
-        return view('pages.todo.edit', $response);
+        return view('pages.edit', $response);
     }
 
     public function update(Request $request, $task_id)
@@ -57,6 +60,6 @@ class TodoController extends Controller
 
     $task->update($request->all());
 
-    return redirect()->route('todo');
+    return redirect()->back();
 }
 }
