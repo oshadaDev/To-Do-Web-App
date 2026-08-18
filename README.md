@@ -305,37 +305,11 @@ Bootstrap Modal
 
 ---
 
-# 🧠 What I Learned
 
-Through this project, I gained practical experience with:
-
-* Laravel MVC architecture
-* Laravel routing
-* Eloquent ORM
-* MySQL database integration
-* Blade templating
-* CRUD operations
-* Form handling and CSRF protection
-* Bootstrap responsive UI
-* JavaScript and jQuery
-* AJAX requests
-* Bootstrap modals
-* Frontend-backend integration
-* Debugging Laravel and PHP applications
-
-The project also helped me improve my problem-solving skills by troubleshooting issues related to routing, Eloquent methods, database configuration, Blade layouts, JavaScript, and AJAX.
 
 ---
 
 # 📸 Screenshots
-
-You can add screenshots of the application here:
-
-```markdown
-![To-Do Application](screenshots/home.png)
-```
-
-Recommended screenshots:
 
 <img width="1830" height="931" alt="4" src="https://github.com/user-attachments/assets/70803a58-d165-45b5-bb82-e89ece656d65" />
 
