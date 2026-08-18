@@ -27,7 +27,7 @@ RUN composer install \
     --no-interaction
 
 # Install frontend dependencies and build
-RUN npm install
+RUN npm ci
 RUN npm run build
 
 # Laravel storage permissions
