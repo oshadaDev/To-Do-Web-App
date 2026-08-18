@@ -28,6 +28,8 @@ RUN composer install \
 
 # Install frontend dependencies and build
 RUN npm ci
+RUN php artisan wayfinder:generate
+
 RUN npm run build
 
 # Laravel storage permissions
